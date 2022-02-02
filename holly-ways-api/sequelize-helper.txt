@@ -1,0 +1,27 @@
+Reference: 
+https://sequelize.org/v4/manual/tutorial/migrations.html
+https://github.com/sequelize/cli/issues/860
+https://levelup.gitconnected.com/creating-sequelize-associations-with-the-sequelize-cli-tool-d83caa902233
+
+Setup 
+npx sequelize-cli init
+(Akan dibuatkan sebuah file config.json di /config selanjutnya sesuaikan dengan settingan dengan database yang akan digunakan)
+
+Buat database pakai mysql cli atau kalau pakek sequelize-cli pakai perintah:
+npx sequelize-cli db:create
+(nama database akan disesuikan pada file config.json)
+
+Step 1 (Buat table)
+Blue print dari table
+npx sequelize-cli model:generate --name fund --attributes title:string,thumbnail:text,goal:double,description:text
+
+Untuk membuat table kita eksekusi perintah:
+npx sequelize db:migrate
+(Hanya akan mengeksy)
+
+untuk undo spesifik name migration file:
+npx sequelize-cli db:migrate:undo --name <path migration...js>
+
+Jika mau membuat associations contohnya foreignKey
+Check referensi di atas, dan lihat contohnya pada models/fund dan models/user
+

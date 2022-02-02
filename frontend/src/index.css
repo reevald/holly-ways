@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom loading */
+.loading{width:180px;height:4px;border-radius:2px;background-color:#e5e7eb;position:relative;overflow:hidden;z-index:1}.loading:before{content:'';height:5px;width:68px;position:absolute;-webkit-transform:translate(-34px,0);-ms-transform:translate(-34px,0);transform:translate(-34px,0);background-color:#f87171;border-radius:2px;-webkit-animation:initial-loading 1.5s infinite ease;animation:animation 1.4s infinite ease}@-webkit-keyframes animation{0%{left:0}50%{left:100%}100%{left:0}}@keyframes animation{0%{left:0}50%{left:100%}100%{left:0}}
+
+/* Custom for progress bar donation */
+.hw-1_20 {
+  @apply w-[5%];
+}
+.hw-2_20 {
+  @apply w-[10%];
+}
+.hw-3_20 {
+  @apply w-[15%];
+}
+.hw-4_20 {
+  @apply w-[20%];
+}
+.hw-5_20 {
+  @apply w-[25%];
+}
+.hw-6_20 {
+  @apply w-[30%];
+}
+.hw-7_20 {
+  @apply w-[35%];
+}
+.hw-8_20 {
+  @apply w-[40%];
+}
+.hw-9_20 {
+  @apply w-[45%];
+}
+.hw-10_20 {
+  @apply w-[50%];
+}
+.hw-11_20 {
+  @apply w-[55%];
+}
+.hw-12_20 {
+  @apply w-[60%];
+}
+.hw-13_20 {
+  @apply w-[65%];
+}
+.hw-14_20 {
+  @apply w-[70%];
+}
+.hw-15_20 {
+  @apply w-[75%];
+}
+.hw-16_20 {
+  @apply w-[80%];
+}
+.hw-17_20 {
+  @apply w-[85%];
+}
+.hw-18_20 {
+  @apply w-[80%];
+}
+.hw-19_20 {
+  @apply w-[95%];
+}
+.hw-20_20 {
+  @apply w-[100%];
+}
